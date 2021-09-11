@@ -1,0 +1,13 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+#page_content {
+	width: 100%;
+	flex: 1 0 auto;
+}

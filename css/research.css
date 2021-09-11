@@ -1,0 +1,54 @@
+.grant .project {
+	font-weight: bold;
+}
+
+.grant .agency,
+.grant .start-date,
+.grant .end-date,
+.grant .award {
+	font-style: italic;
+}
+
+.grant .project:after {
+	content: ".";
+}
+
+
+.grant .agency:after {
+	content: ",";
+}
+
+.grant .start-date + .end-date:before {
+	content: "- ";
+}
+
+.grant .end-date:after {
+	content: ",";
+}
+
+.grant .amount:after {
+	content: ".";
+}
+
+.grant .pi:before {
+	content: "PI(s): ";
+}
+.grant .co-pi:before {
+	content: "Co-PI(s): ";
+}
+
+.grant .pi ~ .pi:before,
+.grant .co-pi ~ .co-pi:before {
+	content: ""; 
+}
+
+.grant .pi:after,
+.grant .co-pi:after {
+	content: ",";
+}
+
+/* this does not work right */
+.grant .pi:nth-last-of-type(1):after,
+.grant .co-pi:nth-last-of-type(1):after {
+	content: ".";
+}
