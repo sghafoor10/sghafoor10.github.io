@@ -11,3 +11,23 @@ body {
 	width: 100%;
 	flex: 1 0 auto;
 }
+
+
+.pdf-icon {
+	background: transparent url(/images/icons/pdf_icon.png) center left no-repeat;
+	padding-left: 1.5em;
+}
+
+.bibtex-icon {
+	background: transparent url(/images/icons/bibtex_icon.png) center left no-repeat;
+	padding-left: 1.5em;
+}
+
+.bibtexentry pre {
+	overflow-x: auto;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}

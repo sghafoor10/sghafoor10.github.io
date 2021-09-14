@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="noindex">
+		<title>Sheikh K. Ghafoor | Publications</title>
+		<link rel="icon" type="image/png" href="/images/favicons/invader.png">
+		<link rel="stylesheet" href="/css/w3.css">
+		<link rel="stylesheet" href="/css/theme-ttu.css">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="/css/research.css">
+		<script src="/javascript/w3.js"></script>
+		<script src="/javascript/bibtex_js.js"></script>
+	</head>
+
+	<body id="research" class="w3-theme-l4">
+		<header id="page_header" class="w3-card-2 w3-theme w3-padding-16" style="z-index:1;">
+			<div class="w3-bar w3-auto">
+				<a href="https://www.tntech.edu/" target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-mobile w3-hover-theme w3-left">
+					<img src="/images/logos/ttu_logo_horizontal.png" alt="Tennessee Tech University"/>
+				</a>
+				<nav class="w3-right w3-large">
+					<a href="/" class="w3-bar-item w3-button w3-mobile w3-border-theme w3-hover-theme">Home</a>
+					<a href="/research.html" class="w3-bar-item w3-button w3-mobile w3-border-theme w3-hover-theme">Research</a>
+					<a href="/publications.html" class="w3-bar-item w3-button w3-bottombar w3-mobile w3-border-theme w3-hover-theme">Publications</a>
+					<a href="/teaching.html" class="w3-bar-item w3-button w3-mobile w3-border-theme w3-hover-theme">Teaching</a>
+					<a href="/students.html" class="w3-bar-item w3-button w3-mobile w3-border-theme w3-hover-theme">Students</a>
+					<a href="/resume.html" class="w3-bar-item w3-button w3-mobile w3-border-theme w3-hover-theme">Resume</a>
+				</nav>
+			</div>
+		</header>
+
+		<main id="page_content" class="w3-auto w3-white" style="z-index:0;">
+			<div class="w3-container">
+				<bibtex src="/publications/publications.bib"></bibtex>
+				
+				<div id="bibtex_display" author="Ghafoor">
+					<div class="bibtex_template" style="display: none;">
+						<div class="w3-panel">
+							<span class="if title"><span style="font-weight: bold;" class="title"></span>.</span>
+							<div class="if author" style="display:inline;"><em><span class="author"></span></em>.</div>
+							<span class="if journal"><em><span class="journal"></span></em>,</span>
+							<span class="if publisher"><em><span class="publisher"></span></em>,</span>
+							<span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
+							<span class="if address"><span class="address"></span>,</span>
+							<span class="if month"><span class="month"></span>,</span>
+							<span class="if year"><span class="year"></span>.</span>
+							<span class="if note"><span class="note"></span></span>
+							<a class="bibtexVar pdf-icon" extra="BIBTEXKEY" onclick="w3.toggleShow('#+BIBTEXKEY+')" >[bib]</a>
+							<span class="if pdf">
+								<a class="bibtexVar pdf-icon" extra="pdf" href="/publications/+pdf+" target="_blank" rel="noopener noreferrer">[PDF]</a>
+							</span>
+							<div id="+BIBTEXKEY+" class="bibtexVar w3-modala" extra="BIBTEXKEY" style="display:none;">
+								<div class="w3-border w3-panel w3-light-grey">
+									<pre class="w3-small"><span class="bibtexraw noread"></span></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="bibtex_structure">
+					<details open class="group year w3-section w3-card-4" extra="ASC number">
+						<summary class="title w3-container w3-theme w3-xlarge"></summary>
+						<div class="templates"></div>
+					</details>
+				</div>
+			</div>
+		</main>
+
+		<footer id="page_footer" class="w3-card-2 w3-center w3-theme w3-small" style="z-index:1;">
+			<address>
+				<p>Tennessee Tech University</p>
+				<p>Cookeville, TN, 38505</p>
+			</address>
+			<p>&copy; 2021, Sheikh Ghafoor</p>
+			<p>
+			<a href="http://validator.w3.org/check/referer" target="_blank" referrerpolicy="origin">HTML</a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank" referrerpolicy="origin">CSS</a>
+			</p>
+		</footer>
+	</body>
+</html>
