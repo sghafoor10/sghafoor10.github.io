@@ -8,6 +8,7 @@
 		<link rel="icon" type="image/png" href="/images/favicons/invader.png">
 		<link rel="stylesheet" href="/css/w3.css">
 		<link rel="stylesheet" href="/css/theme-ttu.css">
+		<link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css">
 		<link rel="stylesheet" href="/css/main.css">
 		<link rel="stylesheet" href="/css/research.css">
 		<script src="/javascript/w3.js"></script>
@@ -37,8 +38,11 @@
 				
 				<div id="bibtex_display" author="Ghafoor">
 					<div class="bibtex_template" style="display: none;">
-						<div class="w3-panel">
-							<span class="if title"><span style="font-weight: bold;" class="title"></span>.</span>
+						<div class="w3-section">
+							<span class="if title">
+								<span class="if pdf"><a class="bibtexVar" extra="pdf" href="/publications/+pdf+" target="_blank" rel="noopener noreferrer"><b><i class="far fa-file-pdf w3-text-red"></i> <span class="title"></span></b></a>.</span>
+								<span class="if !pdf"><b><span class="title"></span></b>.</span>
+							</span>
 							<div class="if author" style="display:inline;"><em><span class="author"></span></em>.</div>
 							<span class="if journal"><em><span class="journal"></span></em>,</span>
 							<span class="if publisher"><em><span class="publisher"></span></em>,</span>
@@ -47,11 +51,10 @@
 							<span class="if month"><span class="month"></span>,</span>
 							<span class="if year"><span class="year"></span>.</span>
 							<span class="if note"><span class="note"></span></span>
-							<a class="bibtexVar pdf-icon" extra="BIBTEXKEY" onclick="w3.toggleShow('#+BIBTEXKEY+')" >[bib]</a>
-							<span class="if pdf">
-								<a class="bibtexVar pdf-icon" extra="pdf" href="/publications/+pdf+" target="_blank" rel="noopener noreferrer">[PDF]</a>
-							</span>
-							<div id="+BIBTEXKEY+" class="bibtexVar w3-modala" extra="BIBTEXKEY" style="display:none;">
+							<a class="bibtexVar" extra="BIBTEXKEY" onclick="w3.toggleShow('#+BIBTEXKEY+')" style="cursor:pointer;">
+								<span class="w3-border-bottom w3-border-black" style="white-space:nowrap;"><i class="fas fa-book w3-text-blue"></i>&nbsp;BibTeX</span>
+							</a>
+							<div id="+BIBTEXKEY+" class="bibtexVar" extra="BIBTEXKEY" style="display:none;">
 								<div class="w3-border w3-panel w3-light-grey">
 									<pre class="w3-small"><span class="bibtexraw noread"></span></pre>
 								</div>
@@ -61,9 +64,9 @@
 				</div>
 				
 				<div class="bibtex_structure">
-					<details open class="group year w3-section w3-card-4" extra="ASC number">
+					<details open class="group year w3-section w3-card-4" extra="DESC number">
 						<summary class="title w3-container w3-theme w3-xlarge"></summary>
-						<div class="templates"></div>
+						<div class="templates w3-container"></div>
 					</details>
 				</div>
 			</div>
