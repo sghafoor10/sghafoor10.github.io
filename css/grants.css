@@ -33,16 +33,26 @@
 .grant .pi:before {
 	content: "PI(s): ";
 }
+.grant .lead-pi:before {
+	content: "Lead PI(s): ";
+}
+.grant .ttu-pi:before {
+	content: "TTU PI(s): ";
+}
 .grant .co-pi:before {
 	content: "Co-PI(s): ";
 }
 
 .grant .pi ~ .pi:before,
+.grant .lead-pi ~ .lead-pi:before,
+.grant .ttu-pi ~ .ttu-pi:before,
 .grant .co-pi ~ .co-pi:before {
 	content: ""; 
 }
 
 .grant .pi:after,
+.grant .lead-pi:after {
+.grant .ttu-pi:after {
 .grant .co-pi:after {
 	content: ",";
 }
