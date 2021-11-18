@@ -7,22 +7,9 @@
 	<xsl:key name="GRANT_BY_START_DATE" match="GRANT" use="substring(START_DATE, 1, 4)"/>
 
 	<xsl:template match="/">
+		<!--
 		<xsl:element name="html">
 			<xsl:element name="head">
-				<xsl:element name="style">
-					.title-wrapper {
-					font-weight: bold;
-					}
-
-					.agency-wrapper,
-					.amount-wrapper {
-					font-style: italic;
-					}
-
-					.note-wrapper {
-					color: red;
-					}
-				</xsl:element>
 			</xsl:element>
 			<xsl:element name="body">
 				<xsl:element name="div">
@@ -32,6 +19,13 @@
 					<xsl:apply-templates select="GRANTS"/>
 				</xsl:element>
 			</xsl:element>
+		</xsl:element>
+		-->
+		<xsl:element name="div">
+			<xsl:attribute name="class">
+				<xsl:text>w3-container</xsl:text>
+			</xsl:attribute>
+			<xsl:apply-templates select="GRANTS"/>
 		</xsl:element>
 	</xsl:template>
 

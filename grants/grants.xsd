@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	targetNamespace="https://sghafoor10.github.io"
-	xmlns="https://sghafoor10.github.io"
 	elementFormDefault="qualified">
+	<!-- targetNamespace="https://sghafoor10.github.io" -->
+	<!-- xmlns="https://sghafoor10.github.io" -->
 
 	<xs:element name="GRANTS" type="GrantCatalog"/>
 	
