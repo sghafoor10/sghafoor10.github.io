@@ -1,64 +1,14 @@
-.grant .project {
+.grant .title-wrapper,
+.grant .lead-pi-title,
+.grant .ttu-pi-title,
+.grant .pi-title,
+.grant .co-pi-title {
 	font-weight: bold;
 }
 
-.grant .agency,
-.grant .start-date,
-.grant .end-date,
-.grant .award {
+.grant .agency-wrapper,
+.grant .date-wrapper,
+.grant .amount-wrapper {
 	font-style: italic;
 }
 
-.grant .project:after {
-	content: ".";
-}
-
-
-.grant .agency:after {
-	content: ",";
-}
-
-.grant .start-date + .end-date:before {
-	content: "- ";
-}
-
-.grant .end-date:after {
-	content: ",";
-}
-
-.grant .amount:after {
-	content: ".";
-}
-
-.grant .pi:before {
-	content: "PI(s): ";
-}
-.grant .lead-pi:before {
-	content: "Lead PI(s): ";
-}
-.grant .ttu-pi:before {
-	content: "TTU PI(s): ";
-}
-.grant .co-pi:before {
-	content: "Co-PI(s): ";
-}
-
-.grant .pi ~ .pi:before,
-.grant .lead-pi ~ .lead-pi:before,
-.grant .ttu-pi ~ .ttu-pi:before,
-.grant .co-pi ~ .co-pi:before {
-	content: ""; 
-}
-
-.grant .pi:after,
-.grant .lead-pi:after {
-.grant .ttu-pi:after {
-.grant .co-pi:after {
-	content: ",";
-}
-
-/* this does not work right */
-.grant .pi:nth-last-of-type(1):after,
-.grant .co-pi:nth-last-of-type(1):after {
-	content: ".";
-}
