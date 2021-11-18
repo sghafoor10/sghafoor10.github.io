@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="https://sghafoor10.github.io"
+	xmlns="https://sghafoor10.github.io"
+	elementFormDefault="qualified">
+
+	<xs:element name="GRANTS" type="GrantCatalog"/>
+	
+	<xs:complexType name="GrantCatalog">
+		<xs:sequence>
+			<xs:element name="GRANT" type="GrantType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="GrantType">
+		<xs:sequence>
+			<xs:element name="TITLE" type="NoteType" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="AGENCY" type="NoteType" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="START_DATE" type="DateType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="END_DATE" type="DateType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="AMOUNT" type="PhaseType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="LEAD_PI" type="NoteType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="TTU_PI" type="NoteType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="PI" type="NoteType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="CO_PI" type="NoteType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="SENIOR_PERSONNEL" type="NoteType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="NOTE" type="xs:string" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="NoteType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="note" type="xs:string"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:complexType name="DateType">
+		<xs:simpleContent>
+			<xs:extension base="GrantDate">
+				<xs:attribute name="note" type="xs:string"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:simpleType name="GrantDate">
+		<xs:union memberTypes="xs:date xs:gYearMonth xs:gYear"/>
+	</xs:simpleType>
+
+	<xs:complexType name="PhaseType">
+		<xs:complexContent>
+			<xs:extension base="NoteType">
+				<xs:attribute name="phase" type="xs:string"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>
