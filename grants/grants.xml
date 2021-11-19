@@ -143,23 +143,15 @@
 	<GRANT>
 		<TITLE>Tracking Water Storage in Lakes: Citizens and Satellites</TITLE>
 		<AGENCY>National Aeronautics and Space Administration (NASA)</AGENCY>
-		<START_DATE>2017-02-01</START_DATE>
-		<END_DATE>2018-01-31</END_DATE>
+		<START_DATE>2017-01</START_DATE>
+		<END_DATE>2022-06</END_DATE>
 		<AMOUNT phase="Prototype" note="TTU Portion: $31,898">$152,674</AMOUNT>
 		<AMOUNT phase="Implementation" note="TTU Portion: $255,000">$1,492,802</AMOUNT>
 		<LEAD_PI>Tamlin Pavelsky</LEAD_PI>
 		<TTU_PI>Sheikh Ghafoor</TTU_PI>
 		<CO_PI>Grant Parkins</CO_PI>
 		<CO_PI>Faisal Hossain</CO_PI>
-		<NOTE>Prototype phase has been funded; implementation phase may be funded based on performance of the prototype phase.</NOTE>
 	</GRANT>
-	<!--<GRANT>
-		<TITLE>Department Wide Parallel and Distributed Computing Adoption</TITLE>
-		<AGENCY>National Science Foundation (NSF) TCPP Early Adopter</AGENCY>
-		<AMOUNT>$5,500</AMOUNT>
-		<PI>Sheikh Ghafoor</PI>
-		<CO_PI>Michael Rogers</CO_PI>
-	</GRANT>-->
 	<GRANT>
 		<TITLE>Benchmark and Analyze of Open Source Parallel XXT Libraries on Different HPC Architectures for Performance Prediction</TITLE>
 		<AGENCY>Oak Ridge National Laboratory (ORNL)</AGENCY>
@@ -193,7 +185,6 @@
 		<AMOUNT note="TTU Portion: $35,000">$150,000</AMOUNT>
 		<LEAD_PI>Faisal Hossain</LEAD_PI>
 		<TTU_PI>Sheikh Ghafoor</TTU_PI>
-		<NOTE>Faisal Hossain is lead PI of this project, funded by Development Innovation Ventures Annual Program of USAID (USAID/DIV).</NOTE>
 	</GRANT>
 	<GRANT>
 		<TITLE>iPDC: Integrating Parallel and Distributed Computing in Introductory Programming</TITLE>
@@ -217,7 +208,7 @@
 		<AGENCY>National Science Foundation (NSF)</AGENCY>
 		<START_DATE>2014-09</START_DATE>
 		<END_DATE>2017-08</END_DATE>
-		<AMOUNT>$550,000</AMOUNT>
+		<AMOUNT>$422,917</AMOUNT>
 		<PI>Ambareen Siraj</PI>
 		<CO_PI>Sheikh Ghafoor</CO_PI>
 	</GRANT>
@@ -237,6 +228,14 @@
 		<PI>Ambareen Siraj</PI>
 		<CO_PI>Sheikh Ghafoor</CO_PI>
 	</GRANT>
+	<!--<GRANT>
+		<TITLE>Collaborative Research: CyberTraining: Conceptualization: Planning a Sustainable Ecosystem for Incorporating Parallel and Distributed Computing into Undergraduate Education</TITLE>
+		<AGENCY>National Science Foundation (NSF)</AGENCY>
+		<START_DATE>2019-11-21</START_DATE>
+		<AMOUNT>$423,921</AMOUNT>
+		<PI>Sushil Prasad</PI>
+		<SENIOR_PERSONNEL>Sheikh Ghafoor</SENIOR_PERSONNEL>
+	</GRANT>-->
 	<GRANT>
 		<TITLE>Autonomic Dynamic Resource-­Aware Runtime System</TITLE>
 		<AGENCY>Sandia National Laboratories (SNL)</AGENCY>
@@ -258,6 +257,22 @@
 		<CO_PI>Essam Ibrahim</CO_PI>
 		<CO_PI>Johne' Parker</CO_PI>
 	</GRANT>
+	<!--<GRANT>
+		<TITLE>Rapid Flood Modeling and Consequence Assessment Using Heterogeneous Accelerator Based High Performance Computation</TITLE>
+		<AGENCY>Office of Research, Tennessee Tech. University</AGENCY>
+		<START_DATE>2015-06</START_DATE>
+		<AMOUNT>$10,000</AMOUNT>
+		<PI>Sheikh Ghafoor</PI>
+		<PI>Alfred Kalayanpu</PI>
+	</GRANT>-->
+	<!--<GRANT>
+		<TITLE>Prototyping a Smartphone Application for Classroom and Field Demonstration on Delivery of Water Knowledge from Environmental Satellites Around the World</TITLE>
+		<AGENCY>Office of Research, Tennessee Tech. University</AGENCY>
+		<START_DATE>2009-07</START_DATE>
+		<END_DATE>2010-06</END_DATE>
+		<AMOUNT>$10,000</AMOUNT>
+		<PI>Sheikh Ghafoor</PI>
+	</GRANT>-->
 	<GRANT>
 		<TITLE>Modeling and Simulation of an Adaptive Parallel System</TITLE>
 		<AGENCY>Office of Research, Tennessee Tech. University</AGENCY>
