@@ -12,6 +12,10 @@ body {
 	flex: 1 0 auto;
 }
 
+.alumni .socials {
+	/* visibility: hidden; */
+}
+
 .bibtexentry pre {
 	overflow-x: auto;
 	white-space: pre-wrap;
@@ -19,5 +23,19 @@ body {
 	white-space: -pre-wrap;
 	white-space: -o-pre-wrap;
 	word-wrap: break-word;
+}
+
+.grant .title-wrapper,
+.grant .lead-pi-title,
+.grant .ttu-pi-title,
+.grant .pi-title,
+.grant .co-pi-title {
+	font-weight: bold;
+}
+
+.grant .agency-wrapper,
+.grant .date-wrapper,
+.grant .amount-wrapper {
+	font-style: italic;
 }
 
