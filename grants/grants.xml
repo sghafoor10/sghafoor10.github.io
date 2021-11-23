@@ -5,7 +5,18 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="https://sghafoor10.github.io/grants grants.xsd">
 	<!-- xmlns="https://sghafoor10.github.io" -->
-	
+
+	<GRANT>
+		<TITLE>CC* Compute: A HPC Cluster for Science Research and Education at Tennessee Tech University</TITLE>
+		<AGENCY>National Science Foundation (NSF)</AGENCY>
+		<START_DATE>2021-07-12</START_DATE>
+		<AMOUNT>$399,983</AMOUNT>
+		<PI>Michael Rogers</PI>
+		<CO_PI>Sheikh Ghafoor</CO_PI>
+		<CO_PI>Michael Renfro</CO_PI>
+		<CO_PI>Alfred Kalyanapu</CO_PI>
+		<CO_PI>Syed Hasan</CO_PI>
+	</GRANT>
 	<GRANT>
 		<TITLE>Lake Observations from Citizen Scientists and Satellites: Validation of Satellite Altimetry to Support Hydrologic Science</TITLE>
 		<AGENCY>National Science Foundation (NSF)</AGENCY>
@@ -212,13 +223,15 @@
 		<PI>Ambareen Siraj</PI>
 		<CO_PI>Sheikh Ghafoor</CO_PI>
 	</GRANT>
-	<!--<GRANT>
+	<GRANT>
 		<TITLE>Department Wide Parallel and Distributed Computing Adoption</TITLE>
 		<AGENCY>National Science Foundation (NSF) TCPP Early Adopter</AGENCY>
+		<START_DATE>2013-07</START_DATE>
+		<END_DATE>2014-06</END_DATE>
 		<AMOUNT>$5,500</AMOUNT>
 		<PI>Sheikh Ghafoor</PI>
 		<CO_PI>Michael Rogers</CO_PI>
-	</GRANT>-->
+	</GRANT>
 	<GRANT>
 		<TITLE>SecKnitKit (Security Knitting Kit): Integrating Security into Traditional Computer Science Courses</TITLE>
 		<AGENCY>National Science Foundation (NSF)</AGENCY>
@@ -228,14 +241,15 @@
 		<PI>Ambareen Siraj</PI>
 		<CO_PI>Sheikh Ghafoor</CO_PI>
 	</GRANT>
-	<!--<GRANT>
+	<GRANT>
 		<TITLE>Collaborative Research: CyberTraining: Conceptualization: Planning a Sustainable Ecosystem for Incorporating Parallel and Distributed Computing into Undergraduate Education</TITLE>
 		<AGENCY>National Science Foundation (NSF)</AGENCY>
-		<START_DATE>2019-11-21</START_DATE>
+		<START_DATE>2019-09-20</START_DATE>
+		<START_DATE>2022-02-29</START_DATE>
 		<AMOUNT>$423,921</AMOUNT>
 		<PI>Sushil Prasad</PI>
 		<SENIOR_PERSONNEL>Sheikh Ghafoor</SENIOR_PERSONNEL>
-	</GRANT>-->
+	</GRANT>
 	<GRANT>
 		<TITLE>Autonomic Dynamic Resource-­Aware Runtime System</TITLE>
 		<AGENCY>Sandia National Laboratories (SNL)</AGENCY>
