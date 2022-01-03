@@ -32,6 +32,9 @@
 	<xsl:template match="GRANTS">
 		<xsl:for-each select="GRANT[count(. | key('GRANT_BY_START_DATE', substring(START_DATE, 1, 4))[1]) = 1]">
 			<xsl:sort order="descending" select="substring(START_DATE, 1, 4)"/>
+			<xsl:comment>
+				<xsl:text> ENTRY </xsl:text>
+			</xsl:comment>
 			<xsl:element name="div">
 				<xsl:attribute name="class">
 					<xsl:text>w3-container</xsl:text>
