@@ -32,18 +32,23 @@
 	<xsl:template match="GRANTS">
 		<xsl:for-each select="GRANT[count(. | key('GRANT_BY_START_DATE', substring(START_DATE, 1, 4))[1]) = 1]">
 			<xsl:sort order="descending" select="substring(START_DATE, 1, 4)"/>
-			<xsl:element name="details">
-				<xsl:attribute name="open"/>
+			<xsl:element name="div">
 				<xsl:attribute name="class">
-					<xsl:text>grant w3-section w3-card-2 w3-theme-l4</xsl:text>
+					<xsl:text>w3-container</xsl:text>
 				</xsl:attribute>
-				<xsl:element name="summary">
+				<xsl:element name="details">
+					<xsl:attribute name="open"/>
 					<xsl:attribute name="class">
-						<xsl:text>w3-container w3-theme w3-xlarge</xsl:text>
+						<xsl:text>grant w3-section w3-card-2 w3-theme-l4</xsl:text>
 					</xsl:attribute>
-					<xsl:value-of select="substring(START_DATE, 1, 4)"/>
+					<xsl:element name="summary">
+						<xsl:attribute name="class">
+							<xsl:text>w3-container w3-theme w3-xlarge</xsl:text>
+						</xsl:attribute>
+						<xsl:value-of select="substring(START_DATE, 1, 4)"/>
+					</xsl:element>
+					<xsl:apply-templates select="key('GRANT_BY_START_DATE', substring(START_DATE, 1, 4))"/>
 				</xsl:element>
-				<xsl:apply-templates select="key('GRANT_BY_START_DATE', substring(START_DATE, 1, 4))"/>
 			</xsl:element>
 		</xsl:for-each>
 	</xsl:template>
@@ -346,7 +351,6 @@
 			</xsl:choose>
 		</xsl:element>
 	</xsl:template>
-
 
 	<xsl:template name="display_with_note">
 		<xsl:element name="span">
