@@ -12,6 +12,14 @@ body {
 	flex: 1 0 auto;
 }
 
+details summary { 
+	cursor: pointer;
+}
+
+details summary > * {
+	display: inline;
+}
+
 .alumni .socials {
 	/* visibility: hidden; */
 }
@@ -38,4 +46,5 @@ body {
 .grant .amount-wrapper {
 	font-style: italic;
 }
+
 
